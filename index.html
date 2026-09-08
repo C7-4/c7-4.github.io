@@ -564,6 +564,232 @@ body {
   .enfp-description { grid-template-columns: 1fr; gap: 20px; }
 }
 
+/* Idol section — 巫哲 */
+.idol {
+  padding: 100px 60px;
+  max-width: 100%;
+  background: linear-gradient(180deg, #f3f0ff 0%, #fff5f0 100%);
+}
+.idol-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.idol .section-label { color: var(--violet); }
+.idol-hero {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  margin: 30px 0 50px;
+  align-items: start;
+}
+.idol-photo {
+  width: 280px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(151,117,250,0.2);
+  position: relative;
+}
+.idol-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.idol-photo::after {
+  content: "巫哲";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 20px 20px 16px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.65));
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.idol-intro h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--violet);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.idol-intro .idol-subtitle {
+  font-size: 1rem;
+  color: var(--gray);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.idol-intro p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.idol-intro .idol-quote {
+  border-left: 4px solid var(--violet);
+  padding: 12px 20px;
+  margin: 20px 0;
+  background: rgba(151,117,250,0.06);
+  border-radius: 0 12px 12px 0;
+  font-style: italic;
+  color: var(--violet);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.idol-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.idol-tag {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+.idol-tag:nth-child(1) { background: rgba(230,57,70,0.12); color: var(--red); }
+.idol-tag:nth-child(2) { background: rgba(255,169,77,0.15); color: var(--amber); }
+.idol-tag:nth-child(3) { background: rgba(78,205,196,0.15); color: var(--mint); }
+.idol-tag:nth-child(4) { background: rgba(151,117,250,0.12); color: var(--violet); }
+
+/* 撒野 feature card */
+.saye-card {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  margin-bottom: 40px;
+}
+.saye-header {
+  padding: 36px 36px 24px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d1b3e 50%, #1a2a3e 100%);
+  color: #fff;
+  position: relative;
+}
+.saye-header::after {
+  content: "★ 招牌作";
+  position: absolute;
+  top: 20px; right: 24px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  background: rgba(255,107,107,0.2);
+  border: 1px solid rgba(255,107,107,0.4);
+  color: var(--coral);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.saye-header h4 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 6px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ffa94d 50%, #4ecdc4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.saye-header .saye-meta {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 1px;
+}
+.saye-body {
+  padding: 32px 36px;
+}
+.saye-body p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.saye-body .saye-highlight {
+  background: linear-gradient(120deg, transparent 0%, rgba(255,107,107,0.08) 50%, transparent 100%);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.saye-body .saye-pull {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--red);
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid rgba(230,57,70,0.1);
+  border-bottom: 2px solid rgba(230,57,70,0.1);
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+/* Other works grid */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.work-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 26px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border-top: 4px solid transparent;
+}
+.work-card:hover {
+  transform: translateY(-6px);
+}
+.work-card:nth-child(1) { border-top-color: var(--mint); }
+.work-card:nth-child(2) { border-top-color: var(--amber); }
+.work-card:nth-child(3) { border-top-color: var(--sky); }
+.work-card:nth-child(4) { border-top-color: var(--violet); }
+.work-card h5 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.work-card:nth-child(1) h5 { color: var(--mint); }
+.work-card:nth-child(2) h5 { color: var(--amber); }
+.work-card:nth-child(3) h5 { color: var(--sky); }
+.work-card:nth-child(4) h5 { color: var(--violet); }
+.work-card .work-year {
+  font-size: 0.78rem;
+  color: var(--gray);
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.work-card p {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--ink);
+}
+.idol-fan-note {
+  margin-top: 40px;
+  padding: 24px 30px;
+  background: rgba(151,117,250,0.06);
+  border-radius: 16px;
+  text-align: center;
+}
+.idol-fan-note p {
+  font-size: 0.95rem;
+  color: var(--gray);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .idol { padding: 70px 24px; }
+  .idol-hero { grid-template-columns: 1fr; gap: 24px; }
+  .idol-photo { width: 100%; height: 300px; margin: 0 auto; }
+  .saye-header { padding: 28px 24px 20px; }
+  .saye-header h4 { font-size: 2rem; }
+  .saye-body { padding: 24px; }
+  .works-grid { grid-template-columns: 1fr; gap: 16px; }
+}
+
 /* Connect section */
 .connect {
   text-align: center;
@@ -916,6 +1142,77 @@ body {
         <h4>✦ 灵感从不在计划里</h4>
         <p>旅行、聊天、逛展、看番——最棒的灵感总出现在"没在想设计"的时候。保持开放和好奇，比坐在书桌前硬憋有用得多。</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IDOL ===== -->
+<section class="idol reveal">
+  <div class="idol-inner">
+    <div class="section-label">07 — 我的女神</div>
+    <h2 class="section-title">巫哲，<br>从初中开始照亮我的光。</h2>
+
+    <div class="idol-hero">
+      <div class="idol-photo">
+        <img src="wuzhe.jpg" alt="巫哲">
+      </div>
+      <div class="idol-intro">
+        <h3>巫哲</h3>
+        <div class="idol-subtitle">晋江文学城签约作者 · 畅销书作家</div>
+        <p>昵称球球、狗蛋儿，金牛座，一个坚持写温暖故事的作者。日常爱好是种花、养狗、怼金毛。文风轻快幽默，笔触细腻，最擅长写少年之间干净明亮的感情。</p>
+        <div class="idol-quote">"巫哲的笔下没有惊天动地，只有两个少年在逼仄生活里拼命往彼此身边挤的笨拙温柔。"</div>
+        <p>从初中开始看她的书，算下来已经七年了。那时候躲在被窝里用手机看书，看完《撒野》哭得稀里哗啦，第二天肿着眼睛上学。她写的每个故事里都有一种东西——<strong>哪怕生活是一团烂泥，也要拉着手跑出去</strong>。</p>
+        <div class="idol-tags">
+          <span class="idol-tag">少年成长</span>
+          <span class="idol-tag">温暖治愈</span>
+          <span class="idol-tag">校园日常</span>
+          <span class="idol-tag">双向救赎</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 撒野招牌作 -->
+    <div class="saye-card">
+      <div class="saye-header">
+        <h4>撒野</h4>
+        <div class="saye-meta">2016 · 晋江文学城 · 约90万字 · 已出版</div>
+      </div>
+      <div class="saye-body">
+        <p>这个冬天，蒋丞觉得格外冷。因为长期的隔阂和矛盾，他从自己生活了十多年的养父母家被退养，回到出生的城市，面对一个有血缘却一无是处的陌生父亲——一个酒鬼，一个赌徒，一个让整条街都摇头的人。</p>
+        <p>就在这座城市里，他遇到了顾飞。一个沉默、狠戾、表面冷漠却把妹妹护在身后的少年。一个会弹吉他、会拍照，却把自己藏得严严实实的人。</p>
+        <p class="saye-pull">"希望我们都能像对方一样勇敢。"</p>
+        <p>蒋丞是学霸，是用成绩和奖学金硬生生把自己从钢厂拔出去的人。顾飞是被困住的人，有才华却被家庭和环境拖在泥里。两个少年在<span class="saye-highlight">萧条老旧的钢铁小城</span>里相遇，从掐架到并肩，从沉默到交心。</p>
+        <p>这不是一个"拯救"故事。是两个人在绝境里<strong>双向救赎</strong>。蒋丞拉着顾飞往外跑，顾飞给蒋丞托底。你说这有什么了不起的？了不起的就是——<span class="saye-highlight">在最烂的生活里，有人愿意拉着你往前走</span>。</p>
+        <p>这部作品常年霸榜不是没有原因的。它写的不是理想化的青春，而是真实的、粗粝的、带着铁锈味的成长。压抑的环境、被困的人生、无力的现实——然后在这一切之上，亮起一束光。</p>
+      </div>
+    </div>
+
+    <!-- 其他作品 -->
+    <div class="works-grid">
+      <div class="work-card">
+        <h5>轻狂</h5>
+        <div class="work-year">2018 · 约60万字</div>
+        <p>主角霍然和寇忱，一对高中少年。和《撒野》的灰暗基调不同，这篇是阳光型校园文——原生家庭幸福、物质无忧的少年群像。从一台空调引发的掐架，到一起跨年看烟花、烧烤、兼职、泡温泉、滑雪。普通却温暖的日常碎片，像彩色玻璃弹珠在青春里熠熠生辉。</p>
+      </div>
+      <div class="work-card">
+        <h5>嚣张</h5>
+        <div class="work-year">2019 · 完结</div>
+        <p>主角林无隅和丁霁。丁霁被林无隅吸引并逐渐爱上他，两人勇敢面对困难。延续巫哲一贯的校园文风，诙谐自然，人物生动。是一个关于"被看见"和"被选择"的故事。</p>
+      </div>
+      <div class="work-card">
+        <h5>三伏</h5>
+        <div class="work-year">2021 · 完结</div>
+        <p>主角江阔和段非凡。养尊处优的大少爷江阔想摆脱家里安排，遇到人缘奇好的护校小英雄段非凡。两个截然不同的少年在成长阵痛期相携相伴，一起创业，体会生活的酸甜苦辣。热血又温暖。</p>
+      </div>
+      <div class="work-card">
+        <h5>一个钢镚儿</h5>
+        <div class="work-year">2017 · 约67万字</div>
+        <p>依然是巫哲式的温暖少年故事。关于成长、关于相遇、关于那些在生活缝隙里倔强生长的小小希望。和《撒野》有微妙的互文感，读完会想深呼吸然后好好活。</p>
+      </div>
+    </div>
+
+    <div class="idol-fan-note">
+      <p>从初中的被窝到大学的深夜，巫哲的书陪我走了七年。她让我相信：不管生活多烂，总有人会拉着你跑出去，然后撒一把野。<strong style="color: var(--violet);">这大概就是追光的意义。</strong></p>
     </div>
   </div>
 </section>
