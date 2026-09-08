@@ -166,6 +166,7 @@ body {
 .hero-badge:nth-child(2) { border-color: var(--mint); color: var(--mint); }
 .hero-badge:nth-child(3) { border-color: var(--violet); color: var(--violet); }
 .hero-badge:nth-child(4) { border-color: var(--amber); color: var(--amber); }
+.hero-badge:nth-child(5) { border-color: var(--pink); color: var(--pink); }
 
 .scroll-hint {
   position: absolute;
@@ -421,6 +422,148 @@ body {
 .color-chip.fav { border-color: var(--red); color: var(--red); }
 .color-chip.fav .color-swatch { width: 22px; height: 22px; }
 
+/* ENFP Personality section */
+.personality {
+  padding: 100px 60px;
+  max-width: 100%;
+  background: linear-gradient(180deg, #fff0f0 0%, #f3f0ff 100%);
+}
+.personality-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.personality .section-label { color: var(--amber); }
+.enfp-banner {
+  margin: 30px 0 50px;
+  padding: 45px 40px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ffa94d 25%, #fcc419 50%, #4ecdc4 75%, #4dabf7 100%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(255,107,107,0.25);
+}
+.enfp-banner::before {
+  content: "";
+  position: absolute;
+  top: -60px; right: -40px;
+  width: 200px; height: 200px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 50%;
+}
+.enfp-banner::after {
+  content: "";
+  position: absolute;
+  bottom: -40px; left: 10%;
+  width: 120px; height: 120px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+}
+.enfp-banner-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.enfp-type {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -2px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+.enfp-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.enfp-subtitle {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.6;
+  max-width: 380px;
+}
+.enfp-traits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.trait-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.trait-card:hover {
+  transform: translateY(-8px);
+}
+.trait-letter {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.trait-card:nth-child(1) .trait-letter { color: var(--red); }
+.trait-card:nth-child(2) .trait-letter { color: var(--amber); }
+.trait-card:nth-child(3) .trait-letter { color: var(--mint); }
+.trait-card:nth-child(4) .trait-letter { color: var(--violet); }
+.trait-word {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 6px;
+}
+.trait-desc {
+  font-size: 0.88rem;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.enfp-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.enfp-desc-item {
+  padding: 28px 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+}
+.enfp-desc-item h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.enfp-desc-item:nth-child(1) h4 { color: var(--red); }
+.enfp-desc-item:nth-child(2) h4 { color: var(--mint); }
+.enfp-desc-item:nth-child(3) h4 { color: var(--amber); }
+.enfp-desc-item:nth-child(4) h4 { color: var(--violet); }
+.enfp-desc-item p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .personality { padding: 70px 24px; }
+  .enfp-banner-content { flex-direction: column; gap: 20px; text-align: center; }
+  .enfp-type { font-size: 3.5rem; }
+  .enfp-traits { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .enfp-description { grid-template-columns: 1fr; gap: 20px; }
+}
+
 /* Connect section */
 .connect {
   text-align: center;
@@ -583,6 +726,7 @@ body {
     <div class="hero-badges">
       <span class="hero-badge">Product Design</span>
       <span class="hero-badge">服务设计 & AI</span>
+      <span class="hero-badge">ENFP</span>
       <span class="hero-badge">Brainstormer</span>
       <span class="hero-badge">二次元 / 旅行 / 社交</span>
     </div>
@@ -713,6 +857,66 @@ body {
       </div>
     </div>
     <img class="beyond-img" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=A%20young%20woman%20with%20red%20accents%20in%20her%20outfit%20sitting%20in%20a%20colorful%20design%20studio%2C%20sketchbook%20open%20on%20her%20lap%2C%20surrounded%20by%20anime%20posters%2C%20travel%20photos%2C%20and%20design%20materials%2C%20warm%20afternoon%20light%20streaming%20through%20the%20window%2C%20editorial%20lifestyle%20photography%2C%20vibrant%20but%20cozy%20atmosphere&image_size=landscape_4_3" alt="陈俞菲的日常场景">
+  </div>
+</section>
+
+<!-- ===== PERSONALITY ===== -->
+<section class="personality reveal">
+  <div class="personality-inner">
+    <div class="section-label">06 — 人格色彩</div>
+    <h2 class="section-title">我是 ENFP，<br>一个行走的灵感发电机。</h2>
+
+    <div class="enfp-banner">
+      <div class="enfp-banner-content">
+        <div class="enfp-type">ENFP</div>
+        <div>
+          <div class="enfp-title">竞选者 · The Campaigner</div>
+          <div class="enfp-subtitle">热情、有创造力、社交力满点。总能在人和想法之间找到意想不到的连接。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="enfp-traits">
+      <div class="trait-card">
+        <div class="trait-letter">E</div>
+        <div class="trait-word">Extraverted</div>
+        <div class="trait-desc">外向型<br>从与人互动中获取能量</div>
+      </div>
+      <div class="trait-card">
+        <div class="trait-letter">N</div>
+        <div class="trait-word">Intuitive</div>
+        <div class="trait-desc">直觉型<br>关注可能性和整体图景</div>
+      </div>
+      <div class="trait-card">
+        <div class="trait-letter">F</div>
+        <div class="trait-word">Feeling</div>
+        <div class="trait-desc">情感型<br>以价值观和人际和谐做决策</div>
+      </div>
+      <div class="trait-card">
+        <div class="trait-letter">P</div>
+        <div class="trait-word">Prospecting</div>
+        <div class="trait-desc">探索型<br>灵活多变，拥抱意外</div>
+      </div>
+    </div>
+
+    <div class="enfp-description">
+      <div class="enfp-desc-item">
+        <h4>✦ 头脑风暴永动机</h4>
+        <p>想法来得快又多，从A跳到D再跳到Q是日常。喜欢把看似不相关的东西拼在一起，碰撞出奇怪但有趣的新东西。一个人 brainstorm 也能嗨起来。</p>
+      </div>
+      <div class="enfp-desc-item">
+        <h4>✦ 人形雷达探测器</h4>
+        <p>对人的情绪和需求特别敏感。喜欢观察不同人的性格、喜好和特长——不是八卦，是真的觉得"每个人都好有意思"。发掘别人的闪光点是一大乐趣。</p>
+      </div>
+      <div class="enfp-desc-item">
+        <h4>✦ 热情即燃料</h4>
+        <p>对感兴趣的事会瞬间投入全部热情，也容易感染身边的人。喜欢那种"一群人因为一个点子燃起来"的感觉，这也是我最爱头脑风暴的原因。</p>
+      </div>
+      <div class="enfp-desc-item">
+        <h4>✦ 灵感从不在计划里</h4>
+        <p>旅行、聊天、逛展、看番——最棒的灵感总出现在"没在想设计"的时候。保持开放和好奇，比坐在书桌前硬憋有用得多。</p>
+      </div>
+    </div>
   </div>
 </section>
 
