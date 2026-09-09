@@ -790,29 +790,15 @@ body {
   .works-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 
-/* Cosplay gallery section */
-.cosplay {
-  padding: 100px 60px;
-  max-width: 100%;
-  background: linear-gradient(180deg, #fff5f0 0%, #f0f5ff 50%, #faf9f6 100%);
-}
-.cosplay-inner {
-  max-width: 960px;
-  margin: 0 auto;
-}
-.cosplay .section-label { color: var(--coral); }
-.cosplay-intro {
-  font-size: 1.05rem;
-  line-height: 1.9;
-  color: var(--gray);
-  max-width: 680px;
-  margin: 20px 0 40px;
-}
-.cosplay-intro strong { color: var(--red); font-weight: 700; }
+/* Cosplay gallery (inside Beyond Design) */
 .cosplay-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin-top: 50px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .cos-item {
   position: relative;
@@ -884,7 +870,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .cosplay { padding: 70px 24px; }
   .cosplay-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .cos-item:nth-child(1) { grid-column: span 2; grid-row: span 1; aspect-ratio: 3/4; }
   .cos-overlay { transform: translateY(0); }
@@ -1161,7 +1146,7 @@ body {
       <h2 class="section-title" style="font-size: 2.2rem;">放下画笔，<br>世界还在。</h2>
       <div class="beyond-text">
         <p>
-          设计之外，我是一个地道的<strong>二次元</strong>。动画和漫画教会我用另一种方式看世界——那些夸张的、细腻的、天马行空的表达，其实一直在悄悄影响我的审美和创造力。
+          设计之外，我是一个地道的<strong>二次元</strong>。动画和漫画教会我用另一种方式看世界——那些夸张的、细腻的、天马行空的表达，其实一直在悄悄影响我的审美和创造力。Cosplay 让我可以变成任何人——银魂里的疯批神威、冲田总悟、还有各种校园少年。每个角色都是一扇门，推开就是新的世界。<strong>Cosplay 不只是穿衣服，是穿上另一个灵魂。</strong>
         </p>
         <p>
           我爱<strong>旅行</strong>，不是打卡拍照那种，而是走到一个陌生的地方，闻不同的空气，和不同的人说话。每一段旅途都是一次灵感补给。
@@ -1183,6 +1168,78 @@ body {
       </div>
     </div>
     <img class="beyond-img" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=A%20young%20woman%20with%20red%20accents%20in%20her%20outfit%20sitting%20in%20a%20colorful%20design%20studio%2C%20sketchbook%20open%20on%20her%20lap%2C%20surrounded%20by%20anime%20posters%2C%20travel%20photos%2C%20and%20design%20materials%2C%20warm%20afternoon%20light%20streaming%20through%20the%20window%2C%20editorial%20lifestyle%20photography%2C%20vibrant%20but%20cozy%20atmosphere&image_size=landscape_4_3" alt="陈俞菲的日常场景">
+  </div>
+  <div class="cosplay-grid">
+    <div class="cos-item">
+      <img src="cos01.jpg" alt="Kamui cosplay at restaurant">
+      <div class="cos-overlay">
+        <div class="cos-char">神威</div>
+        <div class="cos-series">银魂 · 夜兔族 · 餐厅日常</div>
+      </div>
+    </div>
+    <div class="cos-item">
+      <img src="cos02.jpg" alt="Kamui cosplay peeking">
+      <div class="cos-overlay">
+        <div class="cos-char">神威</div>
+        <div class="cos-series">银魂 · 探头杀</div>
+      </div>
+    </div>
+    <div class="cos-item">
+      <img src="cos03.jpg" alt="Okita Sougo cosplay">
+      <div class="cos-overlay">
+        <div class="cos-char">冲田总悟</div>
+        <div class="cos-series">银魂 · 真选组</div>
+      </div>
+    </div>
+    <div class="cos-item">
+      <img src="cos04.jpg" alt="Cosplay on subway">
+      <div class="cos-overlay">
+        <div class="cos-char">通勤日常</div>
+        <div class="cos-series">地铁上的二次元</div>
+      </div>
+    </div>
+    <div class="cos-item">
+      <img src="cos05.jpg" alt="Silver hair character on staircase">
+      <div class="cos-overlay">
+        <div class="cos-char">银发少年</div>
+        <div class="cos-series">楼梯间的冷色调</div>
+      </div>
+    </div>
+    <div class="cos-item">
+      <img src="cos06.jpg" alt="Silver hair character on stone steps">
+      <div class="cos-overlay">
+        <div class="cos-char">石阶躺姿</div>
+        <div class="cos-series">暗黑系 · 哥特风</div>
+      </div>
+    </div>
+    <div class="cos-item">
+      <img src="cos07.jpg" alt="School uniform cosplay reading">
+      <div class="cos-overlay">
+        <div class="cos-char">读书少年</div>
+        <div class="cos-series">校园风 · 青春日常</div>
+      </div>
+    </div>
+    <div class="cos-item">
+      <img src="cos08.jpg" alt="Cosplay portrait">
+      <div class="cos-overlay">
+        <div class="cos-char">校园少年</div>
+        <div class="cos-series">Call Me</div>
+      </div>
+    </div>
+    <div class="cos-item">
+      <img src="cos09.jpg" alt="School uniform cosplay gesture">
+      <div class="cos-overlay">
+        <div class="cos-char">波波头少年</div>
+        <div class="cos-series">校园制服 · Call Me</div>
+      </div>
+    </div>
+    <div class="cos-item">
+      <img src="cos10.jpg" alt="Sporty cosplay selfie">
+      <div class="cos-overlay">
+        <div class="cos-char">运动风</div>
+        <div class="cos-series">金色短发 · 自拍日常</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1313,92 +1370,6 @@ body {
 
     <div class="idol-fan-note">
       <p>从初中的被窝到大学的深夜，巫哲的书陪我走了七年。她让我相信：不管生活多烂，总有人会拉着你跑出去，然后撒一把野。<strong style="color: var(--violet);">这大概就是追光的意义。</strong></p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== COSPLAY ===== -->
-<section class="cosplay reveal">
-  <div class="cosplay-inner">
-    <div class="section-label">08 — Cosplay 相册</div>
-    <h2 class="section-title">二次元，<br>是我另一种活法。</h2>
-    <p class="cosplay-intro">作为<strong>ENFP</strong>，"体验不同人生"是最快乐的事。Cosplay 让我可以变成任何人——银魂里的疯批神威、冲田总悟、还有各种校园少年。每个角色都是一扇门，推开就是新的世界。以下是我这些年出的一些cos，记录了从初中到现在的<strong>二次元旅程</strong>。</p>
-
-    <div class="cosplay-grid">
-      <div class="cos-item">
-        <img src="cos01.jpg" alt="Kamui cosplay at restaurant">
-        <div class="cos-overlay">
-          <div class="cos-char">神威</div>
-          <div class="cos-series">银魂 · 夜兔族 · 餐厅日常</div>
-        </div>
-      </div>
-      <div class="cos-item">
-        <img src="cos02.jpg" alt="Kamui cosplay peeking">
-        <div class="cos-overlay">
-          <div class="cos-char">神威</div>
-          <div class="cos-series">银魂 · 探头杀</div>
-        </div>
-      </div>
-      <div class="cos-item">
-        <img src="cos03.jpg" alt="Okita Sougo cosplay">
-        <div class="cos-overlay">
-          <div class="cos-char">冲田总悟</div>
-          <div class="cos-series">银魂 · 真选组</div>
-        </div>
-      </div>
-      <div class="cos-item">
-        <img src="cos04.jpg" alt="Cosplay on subway">
-        <div class="cos-overlay">
-          <div class="cos-char">通勤日常</div>
-          <div class="cos-series">地铁上的二次元</div>
-        </div>
-      </div>
-      <div class="cos-item">
-        <img src="cos05.jpg" alt="Silver hair character on staircase">
-        <div class="cos-overlay">
-          <div class="cos-char">银发少年</div>
-          <div class="cos-series">楼梯间的冷色调</div>
-        </div>
-      </div>
-      <div class="cos-item">
-        <img src="cos06.jpg" alt="Silver hair character on stone steps">
-        <div class="cos-overlay">
-          <div class="cos-char">石阶躺姿</div>
-          <div class="cos-series">暗黑系 · 哥特风</div>
-        </div>
-      </div>
-      <div class="cos-item">
-        <img src="cos07.jpg" alt="School uniform cosplay reading">
-        <div class="cos-overlay">
-          <div class="cos-char">读书少年</div>
-          <div class="cos-series">校园风 · 青春日常</div>
-        </div>
-      </div>
-      <div class="cos-item">
-        <img src="cos08.jpg" alt="Cosplay portrait">
-        <div class="cos-overlay">
-          <div class="cos-char">校园少年</div>
-          <div class="cos-series">Call Me ✌</div>
-        </div>
-      </div>
-      <div class="cos-item">
-        <img src="cos09.jpg" alt="School uniform cosplay gesture">
-        <div class="cos-overlay">
-          <div class="cos-char">波波头少年</div>
-          <div class="cos-series">校园制服 · Call Me</div>
-        </div>
-      </div>
-      <div class="cos-item">
-        <img src="cos10.jpg" alt="Sporty cosplay selfie">
-        <div class="cos-overlay">
-          <div class="cos-char">运动风</div>
-          <div class="cos-series">金色短发 · 自拍日常</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cos-note">
-      <p>从银魂到校园番，从暗黑哥特到阳光运动风——每个角色都让我体验了一种新的人生。<strong style="color: var(--coral);">Cosplay 不只是穿衣服，是穿上另一个灵魂。</strong></p>
     </div>
   </div>
 </section>
